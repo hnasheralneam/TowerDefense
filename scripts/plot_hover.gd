@@ -24,5 +24,8 @@ func _on_mouse_exited():
 
 func _on_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton && event.pressed:
-		MapSpots.try_place_item(self.name)
+		if MapSpots.shovel_active && MapSpots.spot_full(self.name):
+			MapSpots.shovel_item(self.name)
+		else:
+			MapSpots.try_place_item(self.name)
 

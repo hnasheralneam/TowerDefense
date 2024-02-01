@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bdpinvwfslvsf"]
 
-[ext_resource type="Script" path="res://scripts/plot_hover.gd" id="1_diewm"]
+[ext_resource type="Script" path="res://scripts/plot_hower.gd" id="1_diewm"]
 [ext_resource type="Texture2D" uid="uid://q66b24ifkkf5" path="res://resources/green.png" id="2_6aj12"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5g7xw"]

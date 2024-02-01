@@ -1,12 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://b6028jx5kd2oc"]
 
-[ext_resource type="Texture2D" uid="uid://rc56ly8evxtw" path="res://resources/icon.svg" id="1_ixksr"]
-[ext_resource type="Script" path="res://scripts/Sunflower_Data.gd" id="1_k7o4l"]
+[ext_resource type="Script" path="res://scripts/sunflower_data.gd" id="1_4hvla"]
+[ext_resource type="Texture2D" uid="uid://bhq5pyb4r8cmp" path="res://resources/sunflower-64.png" id="2_15dro"]
 
 [node name="Sunflower" type="Node2D"]
-script = ExtResource("1_k7o4l")
+script = ExtResource("1_4hvla")
 
-[node name="Icon" type="Sprite2D" parent="."]
+[node name="Sunflower-64" type="Sprite2D" parent="."]
 position = Vector2(8, 8)
-scale = Vector2(0.125, 0.125)
-texture = ExtResource("1_ixksr")
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_15dro")

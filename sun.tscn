@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://rvkn5ewcprgw"]
+
+[ext_resource type="Script" path="res://sun-piece.gd" id="1_4a4ly"]
+[ext_resource type="Texture2D" uid="uid://btm65e8b62c4u" path="res://resources/sun.png" id="1_a5doj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bb2rs"]
+radius = 5.09902
+
+[node name="Sun" type="Area2D"]
+script = ExtResource("1_4a4ly")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7, 7)
+shape = SubResource("CircleShape2D_bb2rs")
+
+[node name="Sun" type="Sprite2D" parent="."]
+position = Vector2(7, 7)
+scale = Vector2(0.019697, 0.019697)
+texture = ExtResource("1_a5doj")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
